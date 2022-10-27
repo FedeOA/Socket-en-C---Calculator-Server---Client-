@@ -1,4 +1,4 @@
-# Socket-en-C---Calculator-Server---Client-
+# Socket-en-C-     Calculator    -Server-Client-
 
 
 # TP REDES Y COMUNICACIONES
