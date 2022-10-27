@@ -29,4 +29,6 @@ int searchPositionOperator(Server server);
 void switchOption(Server server);
 
 void makeResponse(Server server,int i,char messageDefault[100]);
+
+void loadBufferWithFileLog(Server server);
 #endif // SERVER_H_INCLUDED
