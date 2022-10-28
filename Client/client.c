@@ -87,7 +87,7 @@ void menu(Client client)
         scanf("%s",client->bufferClient);
         if (time(NULL)>t+10)
         {
-
+            memset(client->bufferClient, 0, sizeof(client->bufferClient));
             client->bufferClient[0]='d';
             SendM(client);
 
@@ -219,7 +219,7 @@ void readInput(Client client)
 {
     if(client->bufferClient[strlen(client->bufferClient) - 1] != '\n')
     {
-        //Limpiamos el búfer
+        //Limpiamos el bÃºfer
         while(getchar() != '\n');
     }
     fgets(client->bufferClient, 256, stdin);
