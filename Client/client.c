@@ -85,7 +85,7 @@ void menu(Client client)
         printf("Seleccione una opcion:\n");
         printf("a.Realizar calculo\nb.Ver registro de actividades\nc.Cerrar sesion.\n");
         scanf("%s",client->bufferClient);
-        if (time(NULL)>t+10)
+        if (time(NULL)>t+120)
         {
             memset(client->bufferClient, 0, sizeof(client->bufferClient));
             client->bufferClient[0]='d';
@@ -123,7 +123,7 @@ void menu(Client client)
 
         readInput(client);
 
-        if (time(NULL)>t+10)
+        if (time(NULL)>t+120)
         {
 
             client->bufferClient[0]='d';
